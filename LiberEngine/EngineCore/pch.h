@@ -42,6 +42,11 @@ enum class Graphics
 #endif 
 
 
+// Resources
+#pragma comment(lib, "Resources.lib")
+#include "../Resources/pch.h"
+#include "../Resources/ResourceManager.h"
+
 
 // EngineUtil
 #pragma comment(lib, "EngineUtil.lib")

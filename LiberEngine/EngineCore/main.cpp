@@ -117,11 +117,13 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		nullptr
 #endif
 ;
-	//auto resources = make_unique<ResourceManager>()
+
+	auto resources = make_unique<ResourceManager>();
 
 	try 
 	{
 		renderer->Initialize(hInstance, hWnd, screenWidth, screenHeight);
+		resources->Initialize();
 	}
 	catch (const EngineException& ex) 
 	{ 

@@ -26,8 +26,8 @@ public:
 	 *  - (enum)LogType		type	: 오류 타입
 	 *  - string_view		msg		: 로그 메세지
 	 */
-	static void Log(LogType type, std::string_view msg);
-
+	static void Log(LogType type, const std::string& msg);
+	static void Log(LogType type, std::string&& msg);
 };
 
 

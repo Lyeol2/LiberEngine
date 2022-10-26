@@ -12,14 +12,24 @@
 #include "../EngineUtil/EngineException.h"
 #include "../EngineUtil/EngineLogger.h"
 
-#pragma comment (lib, "libfbxsdk-md.lib")
-#pragma comment (lib, "libxml2-md.lib")
-#pragma comment (lib, "zlib-md.lib")
+
+// -TODO- 2022-10-26 Fbxsdk lib 정상화필요
+// 임시적으로 FbxModelLoader 는 빌드제외함.
+//#pragma comment (lib, "libfbxsdk-md.lib")
+//#pragma comment (lib, "libxml2-md.lib")
+//#pragma comment (lib, "zlib-md.lib")
+//
+//
+//#include <fbxsdk.h>
 
 
-#include <fbxsdk.h>
-// (C++17) 파일시스템 라이브러리
+#include <fstream>
+
+
+// (C++17) "filesystem" 파일시스템 라이브러리
 #include <filesystem>
+
+
 
 
 // EXPORTS
@@ -29,10 +39,12 @@
 #define	RESOURCES_API	__declspec(dllexport)
 #endif
 
+
 #ifdef UNICODE
 const std::wstring AssetsPath = L"../../Assets/";
 #else 
 const std::string AssetsPath = L"../../Assets/";
 #endif
+
 
 namespace fs = std::filesystem;

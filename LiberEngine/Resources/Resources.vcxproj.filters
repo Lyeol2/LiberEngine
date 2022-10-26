@@ -23,6 +23,9 @@
     <Filter Include="Sources\99.Define">
       <UniqueIdentifier>{c6235736-f9a9-43cc-92cc-21d613de2ee2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sources\02.Resource\AssetsReader">
+      <UniqueIdentifier>{01a3a216-200e-416d-8390-fffb4b66ea17}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
