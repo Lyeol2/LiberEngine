@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Sources\99.Define">
+      <UniqueIdentifier>{2758f63f-be9c-4f6a-8910-a88bf1228713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\00.Entry">
+      <UniqueIdentifier>{68516415-f820-4c1b-8617-16258afe2bc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\01.Graphics">
+      <UniqueIdentifier>{55d8ffee-a554-4ade-a222-dda35d874e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\98.Util">
+      <UniqueIdentifier>{1a92527d-2785-4997-9cb0-2869d7c187b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\99.Define\PCH">
+      <UniqueIdentifier>{fb56233e-db55-45d6-b345-f0cfd47bb2a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\99.Define\Macro">
+      <UniqueIdentifier>{e9872715-b594-4a95-84ed-760142a67c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\02.Model">
+      <UniqueIdentifier>{c020a9d1-a1a3-4d59-b595-712f6c324d54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Sources\00.Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Renderer.cpp">
+      <Filter>Sources\01.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Sources\99.Define\PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Model.cpp">
+      <Filter>Sources\02.Model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Sources\99.Define\PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Renderer.h">
+      <Filter>Sources\01.Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Model.h">
+      <Filter>Sources\02.Model</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

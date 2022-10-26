@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Sources\PCH">
+      <UniqueIdentifier>{43fed165-96dc-42f2-800b-5d2c90c1bb6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\01.ModelLoader">
+      <UniqueIdentifier>{e63a310c-3bec-42c2-bcc8-fc6d94d2d301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\00.Entry">
+      <UniqueIdentifier>{34931764-d60c-406a-a730-f42dcfb8103e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\02.Resource">
+      <UniqueIdentifier>{3f90e921-97e2-4476-ac3e-042af47a620e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\02.Resource\Data">
+      <UniqueIdentifier>{811743ec-d424-428d-b34b-1c0bcfe1f565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\99.Define">
+      <UniqueIdentifier>{c6235736-f9a9-43cc-92cc-21d613de2ee2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Sources\PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Sources\00.Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="FbxModelLoader.cpp">
+      <Filter>Sources\01.ModelLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Sources\02.Resource</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Sources\PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="FbxModelLoader.h">
+      <Filter>Sources\01.ModelLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Sources\02.Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="meta.h">
+      <Filter>Sources\02.Resource\Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

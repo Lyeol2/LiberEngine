@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Sources\PCH">
+      <UniqueIdentifier>{b84e57c8-63e4-4e01-9a46-5d48dfe67491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\EngineException">
+      <UniqueIdentifier>{30e5e7d9-88c6-4879-911e-ca67af6d7260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\StandardLib">
+      <UniqueIdentifier>{c43fb2ff-92ad-40e4-a3ed-ff3171038ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\EngineLogger">
+      <UniqueIdentifier>{9d71830a-49fe-45e3-b469-ff631ba368f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Sources\PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineException.cpp">
+      <Filter>Sources\EngineException</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineLogger.cpp">
+      <Filter>Sources\EngineLogger</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Sources\PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineException.h">
+      <Filter>Sources\EngineException</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineLib.h">
+      <Filter>Sources\StandardLib</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineLogger.h">
+      <Filter>Sources\EngineLogger</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

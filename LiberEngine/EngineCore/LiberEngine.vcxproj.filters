@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{909f2735-978b-410c-8800-95eea4ab4816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\00.Entry">
+      <UniqueIdentifier>{542380aa-dedb-4f78-90c0-94ce7a572ef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\99.Define">
+      <UniqueIdentifier>{01cfaafa-2e6a-4461-97db-1afb0c3aab40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\98.Util">
+      <UniqueIdentifier>{67af1056-d755-4704-802d-27505fbb19e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\01.Render">
+      <UniqueIdentifier>{f0021245-13b8-4383-93ce-997b045e80eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Sources\00.Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Sources\99.Define</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Sources\99.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="DX12Define.h">
+      <Filter>Sources\99.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Define.h">
+      <Filter>Sources\99.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Sources\01.Render</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
