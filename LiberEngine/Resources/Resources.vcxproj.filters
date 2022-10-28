@@ -40,6 +40,9 @@
     <ClCompile Include="ResourceManager.cpp">
       <Filter>Sources\02.Resource</Filter>
     </ClCompile>
+    <ClCompile Include="AssetsReader.cpp">
+      <Filter>Sources\02.Resource\AssetsReader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -53,6 +56,9 @@
     </ClInclude>
     <ClInclude Include="meta.h">
       <Filter>Sources\02.Resource\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetsReader.h">
+      <Filter>Sources\02.Resource\AssetsReader</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

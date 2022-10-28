@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "ResourceManager.h"
+#include "AssetsReader.h"
 
 ResourceManager::ResourceManager()
 {
@@ -11,6 +12,9 @@ ResourceManager::~ResourceManager()
 
 void ResourceManager::Initialize()
 {
+
+	assetsReader = std::make_unique<AssetsReader>();
+
 	fs::path assetsPath(AssetsPath);
 
 	fs::directory_entry dirEntry(assetsPath);

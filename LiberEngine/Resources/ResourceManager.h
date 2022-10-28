@@ -1,5 +1,9 @@
 #pragma once
 
+/* -THINKING- 
+	유니티는 meta파일을 생성
+	언리얼은 모든에셋을 uasset로 변환
+	*/ 
 
 // 리소스 타입
 enum class ResourceType
@@ -30,6 +34,8 @@ public:
 	void Reload();
 
 private:
+	std::unique_ptr<AssetsReader> assetsReader;
+
 
 
 
