@@ -5,7 +5,6 @@
 // 여기에 자주 업데이트할 파일을 추가하지 마세요. 그러면 성능이 저하됩니다.
 
 #pragma once
-
 // EngineUtil
 #pragma comment(lib, "EngineUtil.lib")
 #include "../EngineUtil/EngineLib.h"
@@ -13,14 +12,15 @@
 #include "../EngineUtil/EngineLogger.h"
 
 
-// -TODO- 2022-10-26 Fbxsdk lib 정상화필요
-// 임시적으로 FbxModelLoader 는 빌드제외함.
-//#pragma comment (lib, "libfbxsdk-md.lib")
-//#pragma comment (lib, "libxml2-md.lib")
-//#pragma comment (lib, "zlib-md.lib")
-//
-//
-//#include <fbxsdk.h>
+
+// -TODO- 2022-10-28 libfbxsdk-md.lib is larger than 100 MB
+// GIT LFS  << 사용방법 연구
+#pragma comment (lib, "libfbxsdk-md.lib")
+#pragma comment (lib, "libxml2-md.lib")
+#pragma comment (lib, "zlib-md.lib")
+
+
+#include <fbxsdk.h>
 
 
 #include <fstream>
@@ -41,9 +41,9 @@
 
 
 #ifdef UNICODE
-const std::wstring AssetsPath = L"../../Assets/";
+const std::wstring AssetsPath = L"..\\..\\Assets\\";
 #else 
-const std::string AssetsPath = L"../../Assets/";
+const std::string AssetsPath = L"..\\..\\Assets\\";
 #endif
 
 

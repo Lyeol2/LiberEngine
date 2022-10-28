@@ -1,6 +1,6 @@
 #include "pch.h"
-#include "ResourceManager.h"
 #include "AssetsReader.h"
+#include "ResourceManager.h"
 
 ResourceManager::ResourceManager()
 {
@@ -46,6 +46,9 @@ void ResourceManager::Initialize()
 		const fs::directory_entry& entry = *directoryIter;
 
 		LB_LOG(Log, entry.path().string());
+
+		// C++(?) auto[] 다중타입추론 
+		auto[type, asset] = assetsReader->ReadAssets(entry.path());
 		
 		directoryIter++;
 	}

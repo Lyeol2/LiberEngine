@@ -24,14 +24,14 @@ public:
 private:
 	std::string m_lineNum;
 	std::string m_functionName;
-	std::string m_fileName;
+	std::string m_filename;
 
 	std::string m_fullMessage;
 
 public:
 	inline std::string_view GetLineNum()		const noexcept	{ return m_lineNum;			}
 	inline std::string_view GetFunctionName()	const noexcept	{ return m_functionName;	}
-	inline std::string_view GetfileName()		const noexcept	{ return m_fileName;		}
+	inline std::string_view Getfilename()		const noexcept	{ return m_filename;		}
 };
 
 #define ThrowIfFailed(hr, msg) \

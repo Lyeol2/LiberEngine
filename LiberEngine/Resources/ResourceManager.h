@@ -34,7 +34,7 @@ public:
 	void Reload();
 
 private:
-	std::unique_ptr<AssetsReader> assetsReader;
+	std::unique_ptr<class AssetsReader> assetsReader;
 
 
 

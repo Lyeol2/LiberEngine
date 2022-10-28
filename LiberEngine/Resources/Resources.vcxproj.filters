@@ -17,14 +17,17 @@
     <Filter Include="Sources\02.Resource">
       <UniqueIdentifier>{3f90e921-97e2-4476-ac3e-042af47a620e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Sources\02.Resource\Data">
-      <UniqueIdentifier>{811743ec-d424-428d-b34b-1c0bcfe1f565}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Sources\99.Define">
       <UniqueIdentifier>{c6235736-f9a9-43cc-92cc-21d613de2ee2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Sources\02.Resource\AssetsReader">
       <UniqueIdentifier>{01a3a216-200e-416d-8390-fffb4b66ea17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\02.Resource\lasset">
+      <UniqueIdentifier>{811743ec-d424-428d-b34b-1c0bcfe1f565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\02.Resource\lasset\Model">
+      <UniqueIdentifier>{037099e1-5ee7-43d8-9115-9fe756f0f4d9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +46,12 @@
     <ClCompile Include="AssetsReader.cpp">
       <Filter>Sources\02.Resource\AssetsReader</Filter>
     </ClCompile>
+    <ClCompile Include="LAsset.cpp">
+      <Filter>Sources\02.Resource\lasset</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Sources\02.Resource\lasset\Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -54,11 +63,17 @@
     <ClInclude Include="ResourceManager.h">
       <Filter>Sources\02.Resource</Filter>
     </ClInclude>
-    <ClInclude Include="meta.h">
-      <Filter>Sources\02.Resource\Data</Filter>
+    <ClInclude Include="LAsset.h">
+      <Filter>Sources\02.Resource\lasset</Filter>
     </ClInclude>
     <ClInclude Include="AssetsReader.h">
       <Filter>Sources\02.Resource\AssetsReader</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetsReader.hpp">
+      <Filter>Sources\02.Resource\AssetsReader</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Sources\02.Resource\lasset\Model</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
