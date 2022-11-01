@@ -11,6 +11,16 @@ public:
 
 	void Initialize();
 
+	// >>
+	//	 Fbx 형식의 모델파일을 읽습니다.
+	//  # Parameter : 
+	//        - std::string filePath : fbx모델의 파일경로입니다.
+	//  # Return :
+	//        - std::shared_ptr<Model> : 
+	//          읽어드린 모델정보의 스마트 포인터입니다. 실패시 nullptr 반환합니다.
+	// <<
+	std::shared_ptr<Model> ReadFbxFile(std::string filePath);
+
 	void Destroy();
 
 private:

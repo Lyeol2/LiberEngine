@@ -1,0 +1,18 @@
+------------------------
+2022-11-01 15:22 
+
+주석규칙 변경
+-THINKING- 
+/* */ 방식은 띄어쓰기가 적용되지 않아 난잡해보일 수 있음
+
+// >>
+//	 <Summary>
+//  <Subdescription>
+//  # Parameter :		(spacing 2)
+//        - <type> <name> : <description>
+//  # Return :			
+//        - <type> :	(spacing 8)
+//          <description> (spacing 10)
+// <<
+
+------------------------

@@ -24,6 +24,9 @@
     <ClCompile Include="pch.cpp">
       <Filter>Sources\99.Define</Filter>
     </ClCompile>
+    <ClCompile Include="Notice.txt">
+      <Filter>Sources\00.Entry</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
