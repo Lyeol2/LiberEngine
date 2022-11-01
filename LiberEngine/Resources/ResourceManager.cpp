@@ -45,8 +45,6 @@ void ResourceManager::Initialize()
 	{
 		const fs::directory_entry& entry = *directoryIter;
 
-		LB_LOG(Log, entry.path().string());
-
 		// C++(?) auto[] 다중타입추론 
 		auto[type, asset] = assetsReader->ReadAssets(entry.path());
 		

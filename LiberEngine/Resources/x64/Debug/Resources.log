@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  AssetsReader.cpp
+  dllmain.cpp
+  FbxModelLoader.cpp
+  LAsset.cpp
+  Model.cpp
+  ResourceManager.cpp
+  코드를 생성하고 있습니다...
+     E:\Coding\LiberEngine\x64\Debug\Resources.lib 라이브러리 및 E:\Coding\LiberEngine\x64\Debug\Resources.exp 개체를 생성하고 있습니다.
+  Resources.vcxproj -> E:\Coding\LiberEngine\x64\Debug\Resources.dll

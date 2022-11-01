@@ -6,9 +6,10 @@
 	*/ 
 
 // 리소스 타입
-enum class ResourceType
+enum class FileType
 {
 	Unknown,
+	Directory,
 	Script,
 	Texture,
 	Model,

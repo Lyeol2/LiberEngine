@@ -26,7 +26,7 @@ private:
 	template<>
 	Model CreateLAsset(fs::path path);
 	/*
-	*  에셋을 읽습니다 .lasset 형식의 파일이 없다면 생성합니다.
+	*  .lasset 파일을 읽어 LAsset 객체를 생성합니다.
 	*  | Template :
 	*  - LAsset : 사용할 AssetType 자원의 형식입니다. (Enum)ResourceType 과 관련이 있습니다.
 	* 
@@ -36,12 +36,14 @@ private:
 	template<typename AssetType>
 	AssetType ReadLAssets(fs::path path);
 public:
-	/// <summary>
-	/// asd
-	/// </summary>
-	/// <param name="path">asd</param>
-	/// <returns>ads</returns>
-	std::pair<ResourceType, LAsset> ReadAssets(fs::path path);
+	/*
+	*  에셋을 읽습니다 .lasset 형식의 파일이 없다면 생성합니다.
+	*  | Parameter :
+	*  - fs::path path : 읽을 에셋 경로 (fs << std::filesystem)
+	*  | Return : 
+	*  - std::pair<ResourceType, LAsset> : 리소스타입과 LAsset 객체를 반환합니다
+	*/
+	std::pair<FileType, LAsset> ReadAssets(fs::path path);
 
 };
 
