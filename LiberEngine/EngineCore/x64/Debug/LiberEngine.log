@@ -1,4 +1,1 @@
-﻿  pch.cpp
-  main.cpp
-E:\Coding\LiberEngine\LiberEngine\EngineCore\main.cpp(18): warning C4715: 'WndProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  LiberEngine.vcxproj -> E:\Coding\LiberEngine\x64\Debug\EngineCore.exe
+﻿  LiberEngine.vcxproj -> C:\Users\USER\Documents\GitHub\LiberEngine\x64\Debug\EngineCore.exe

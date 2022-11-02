@@ -29,7 +29,7 @@ std::shared_ptr<Model> FbxModelLoader::ReadFbxFile(std::string filePath)
 
 	if (!result)
 	{
-		LB_LOG(Error, "FbxImporter::Initialize() failed.", __LINE__, __FUNCTION__, __FILE__);
+		LB_LOG(Error, "FbxImporter::Initialize() failed.");
 		return nullptr;
 	}
 
@@ -42,7 +42,7 @@ std::shared_ptr<Model> FbxModelLoader::ReadFbxFile(std::string filePath)
 
 	if (!result)
 	{
-		LB_LOG(Error, "FbxImporter::Import() failed.", __LINE__, __FUNCTION__, __FILE__);
+		LB_LOG(Error, "FbxImporter::Import() failed.");
 		return nullptr;
 	}
 

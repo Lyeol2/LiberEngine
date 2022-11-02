@@ -129,10 +129,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	{ 
 		MessageBoxA(hWnd, ex.what(), "EngineException", MB_ICONERROR);
 	}
-	catch (const exception& ex) 
-	{
-		MessageBoxA(hWnd, ex.what(), "exception", MB_ICONERROR);
-	}
+	//catch (const exception& ex) 
+	//{
+	//	MessageBoxA(hWnd, ex.what(), "exception", MB_ICONERROR);
+	//}
 
 	// 메세지 구조체 생성 및 초기화
 	MSG msg;
@@ -162,10 +162,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 			{
 				MessageBoxA(hWnd, ex.what(), "EngineException", 0);
 			}
-			catch (const exception& ex)
-			{
-				MessageBoxA(hWnd, ex.what(), "exception", 0);
-			}
+			//catch (const exception& ex)
+			//{
+			//	MessageBoxA(hWnd, ex.what(), "exception", 0);
+			//}
 		}
 	}
 	return 0;

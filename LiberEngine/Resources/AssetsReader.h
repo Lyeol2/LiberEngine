@@ -43,7 +43,26 @@ public:
 	*  | Return : 
 	*  - std::pair<ResourceType, LAsset> : 리소스타입과 LAsset 객체를 반환합니다
 	*/
-	std::pair<FileType, LAsset> ReadAssets(fs::path path);
+	std::pair<FileType, std::shared_ptr<LAsset>> ReadAssets(fs::path path);
+
+	// >>
+	//	 .lasset를 가진 파일인지 확인합니다.
+	//  
+	//  # Parameter :		
+	//        - fs::path path : 파일의 경로입니다.
+	//  # Return :			
+	//        - bool : lasset를 가진파일이라면 참을 반환합니다.
+	// <<
+	inline bool HasLAsset(fs::path path);
+	// >>
+	//	 파일 확장자를 검사해서 반환합니다.
+	//  
+	//  # Parameter :		
+	//        - fs::path path : 파일의 경로입니다.
+	//  # Return :			
+	//        - std::optional<std::string> : 확장자의 이름을 반환합니다 없다면 nullopt
+	// <<
+	std::optional<std::string> GetAssetExtension(fs::path path);
 
 };
 
